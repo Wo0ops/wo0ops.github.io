@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<title> Nolan Anderson's Portfolio - Home </title>
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" type="text/css" href="Styles/Style Sheet.css">		
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+	<header>
+		<nav class="navbar">
+			<h1 class="logo">Nolan</h1>
+
+			<ul class="nav-links">
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="about.html"> About Me </a></li>
+				<li><a href="Contact.html"> Contact Me </a></li>
+				<li><a href="work.html"> Work </a></li>
+			</ul>
+		</nav>
+	</header>
+
+<main>
+	
+	<h2 class="spc"> My Work </h2>
+
+		<h3> Coding </h3>
+			<a class="work-links" href="questions.html" id="lk"> Questionnaire </a>
+				<img class="Work-pic hover-shadow" src="Pictures/Questionnaire-pic.png" alt="Questionnaire" onclick="openModal();currentSlide(1)">
+
+		<h3> Writing </h3>
+			<a class="work-links" href="Pictures/Doc-1.pdf"> Research Paper Writing </a>
+				<img class="Work-pic hover-shadow" src="Pictures/Doc-1-pic.png" alt="Research paper writing" onclick="openModal();currentSlide(2)">
+
+			<a class="work-links" href="Pictures/Doc-2.pdf"> Narrative Writing Paper </a>
+				<img class="Work-pic hover-shadow" src="Pictures/Doc-2-pic.png" alt="Narrative Writing Paper" onclick="openModal();currentSlide(3)">
+
+		<h3> Presentations </h3>
+			<a class="work-links" href="Pictures/Slide-1.pdf"> Research Presentation </a>
+				<img class="Work-pic hover-shadow" src="Pictures/Slide-1-pic.png" alt="Research Presentation" onclick="openModal();currentSlide(4)">
+	
+</main>	
+	
+	<footer>
+		<a href="#top"> Back to top </a>
+		
+		<table>
+			<tr>
+				<td> Eamil </td>
+				<td> <a href="mailto:nolana.7925@gmail.com"> nolana.7925@gmail.com </a> </td>
+			</tr>
+		
+			<tr>
+				<td> Phone Number </td>
+				<td> <a href="tel:+1231231234"> 123-123-1234 </a> </td>
+			</tr>
+		</table>
+	</footer>
+	
+	<!-- put gallery code stuff in  -->
+
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="Pictures/Questionnaire-pic.png" style="height:400px;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="Pictures/Doc-1-pic.png" style="height:400px;">
+				</div>
+				  
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="Pictures/Doc-2-pic.png" style="height:400px;">
+				</div>
+				  
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="Pictures/Slide-1-pic.png" style="height:400px;">
+				</div>
+			
+		  <!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		  <!-- Caption text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+		  <!-- Thumbnail image controls -->
+			<div class="column">
+				<img class="demo" src="Pictures/Questionnaire-pic.png" onclick="currentSlide(1)" alt="Questionnaire">
+				<img class="demo" src="Pictures/Doc-1-pic.png" onclick="currentSlide(2)" alt="Research paper writing">
+				<img class="demo" src="Pictures/Doc-2-pic.png" onclick="currentSlide(3)" alt="Narrative Writing Paper">
+				<img class="demo" src="Pictures/Slide-1-pic.png" onclick="currentSlide(4)" alt="Research Presentation">
+			</div>
+		</div>	
+	</div>
+	
+	<script src="script.js"></script>
+	
+</body>
+</html>
